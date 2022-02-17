@@ -1,0 +1,127 @@
+#playmode-container {
+	display: flex;
+	align-items: center;
+	height: 90vh;
+}
+
+#playmode-container img {
+	width: 350px;
+}
+#playmode-container img:first-child {
+	margin-right: 20px;
+}
+#playmode-container .xo-container {
+	width: 100%;
+}
+#playmode-container > div {
+	flex: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#playmode-container .choose-container {
+	height: 100%;
+}
+#playmode-container .choose {
+	/* width: 100%; */
+	border-left: 2px solid black;
+	padding: 40px;
+}
+#playmode-container p {
+	font-size: 72px;
+	color: rgb(35, 84, 247);
+	text-align: center;
+}
+
+#playmode-container button {
+	display: block;
+	margin: auto;
+	font-size: 48px;
+	border: 0;
+	border-radius: 20px;
+	width: 250px;
+	box-shadow: 1px 28px 20px -21px rgba(74, 74, 74, 0.75);
+}
+#playmode-container .ai {
+	background-color: rgb(35, 84, 247);
+	color: white;
+	margin-bottom: 20px;
+}
+#playmode-container button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+#playmode-container button:active {
+	transform: translateY(5px);
+	box-shadow: 1px 20px 20px -21px rgba(74, 74, 74, 0.75);
+}
+
+@media screen and (max-width: 1350px) {
+	#playmode-container img {
+		width: 300px;
+	}
+	#playmode-container p {
+		font-size: 52px;
+	}
+	#playmode-container button {
+		font-size: 42px;
+	}
+	#playmode-container .xo-container {
+		justify-content: end;
+	}
+}
+@media screen and (max-width: 1100px) {
+	#playmode-container img {
+		width: 190px;
+	}
+	#playmode-container p {
+		font-size: 44px;
+	}
+	#playmode-container button {
+		font-size: 38px;
+	}
+	#playmode-container .choose {
+		padding: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	#playmode-container {
+		display: flex;
+		flex-direction: column;
+	}
+	#playmode-container > div {
+		display: block;
+	}
+	#playmode-container .xo-container {
+		display: flex;
+		justify-content: center;
+		height: auto;
+	}
+	#playmode-container .choose-container {
+		height: auto;
+	}
+	#playmode-container .choose {
+		border-left: 0;
+		padding: 0;
+	}
+	#playmode-container img {
+		width: 150px;
+		position: relative;
+		top: 50px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#playmode-container img {
+		width: 120px;
+		top: 70px;
+	}
+	#playmode-container p {
+		font-size: 38px;
+	}
+	#playmode-container button {
+		font-size: 30px;
+		box-shadow: 0px 15px 10px -10px #777;
+	}
+}

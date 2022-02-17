@@ -1,0 +1,140 @@
+.x-button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: rgb(3, 58, 215); */
+	background: linear-gradient(
+		55deg,
+		rgba(3, 58, 215, 1) 0%,
+		rgba(31, 207, 239, 1) 100%
+	);
+}
+.x-button .module {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 85%;
+	height: 85%;
+	background-color: white;
+	border-radius: 50%;
+}
+.x-button .button {
+	width: 85%;
+	height: 85%;
+	background: linear-gradient(
+		55deg,
+		rgba(3, 58, 215, 1) 0%,
+		rgba(31, 207, 239, 1) 100%
+	);
+	border-radius: 50%;
+}
+
+.o-button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: rgb(3, 58, 215); */
+	background: linear-gradient(
+		45deg,
+		rgba(255, 110, 2, 1) 0%,
+		rgba(255, 110, 2, 1) 13%,
+		rgba(255, 255, 0, 1) 100%
+	);
+}
+.o-button .module {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 85%;
+	height: 85%;
+	background-color: white;
+	border-radius: 50%;
+}
+.o-button .button {
+	width: 85%;
+	height: 85%;
+	background: linear-gradient(
+		45deg,
+		rgba(255, 110, 2, 1) 0%,
+		rgba(255, 110, 2, 1) 13%,
+		rgba(255, 255, 0, 1) 100%
+	);
+	border-radius: 50%;
+}
+
+/* =========================================================== */
+
+#pickSide {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	justify-content: center;
+}
+
+#pickSide p {
+	font-size: 72px;
+	/* color: rgb(35, 84, 247); */
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#pickSide .side-container {
+	display: flex;
+	justify-content: center;
+}
+.x-container,
+.o-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.x-container:hover,
+.o-container:hover {
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+#pickSide .klik {
+	opacity: 0.5;
+}
+
+.x-container {
+	margin-right: 20px;
+}
+
+#pickSide img {
+	width: 270px;
+	display: block;
+}
+
+@media screen and (max-width: 678px) {
+	#pickSide img {
+		width: 200px;
+	}
+	#pickSide p {
+		font-size: 64px;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 425px) {
+	#pickSide img {
+		width: 170px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#pickSide p {
+		font-size: 58px;
+	}
+	#pickSide img {
+		width: 145px;
+	}
+}
