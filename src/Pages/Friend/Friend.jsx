@@ -1,3 +1,5 @@
+import checkForWin from './Algorithm/CheckForWin';
+
 export default function Friend() {
 	return (
 		<>
